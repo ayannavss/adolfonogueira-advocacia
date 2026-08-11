@@ -34,7 +34,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" as="image" href="assets/adolfo-hero.webp" type="image/webp" fetchpriority="high">
 
   <script type="application/ld+json">
   {
@@ -251,6 +250,16 @@
       background: var(--ink);
       z-index: 2;
     }
+    .hero-img-wrap.photo-placeholder {
+      background: linear-gradient(145deg, var(--slate-lt), #151516);
+      border: 1px solid rgba(184,146,47,0.32);
+    }
+    .hero-img-wrap.photo-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
     .hero-img-wrap img {
       width: 100%; height: 100%;
       object-fit: cover;
@@ -308,6 +317,16 @@
     .sobre-img-wrap {
       aspect-ratio: 4/5; overflow: hidden; background: var(--slate);
       position: relative;
+    }
+    .sobre-img-wrap.photo-placeholder {
+      background: linear-gradient(145deg, var(--cream-dk), var(--parchment));
+      border: 1px solid rgba(140,109,30,0.28);
+    }
+    .sobre-img-wrap.photo-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 1.25rem;
+      border: 1px solid rgba(140,109,30,0.18);
     }
     .sobre-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(10%) contrast(1.08); }
     .sobre-accent {
@@ -418,6 +437,16 @@
     .perfil-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem, 6vw, 8rem); align-items: center; }
     .perfil-visual { position: relative; }
     .perfil-img-wrap { aspect-ratio: 3/4; overflow: hidden; position: relative; background: var(--slate-lt); }
+    .perfil-img-wrap.photo-placeholder {
+      background: linear-gradient(145deg, var(--slate-lt), #171719);
+      border: 1px solid rgba(184,146,47,0.34);
+    }
+    .perfil-img-wrap.photo-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
     .perfil-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; filter: grayscale(20%); }
     .perfil-img-label {
       position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 2;
@@ -574,6 +603,9 @@
       .cta-actions { flex-direction: row; flex-wrap: wrap; }
       .diferenciais-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
+      .faq-layout { gap: 0; }
+      .faq-sidebar { position: static; top: auto; margin-bottom: 2.75rem; }
+      .faq-sidebar .btn-ghost { width: fit-content; max-width: 100%; }
       nav.nav { display: none; }
       .btn-nav { display: none; }
       .hamburger { display: flex; }
@@ -583,6 +615,9 @@
       .hero-title { font-size: 2.4rem; }
       .hero-actions { flex-direction: column; }
       .hero-meta { gap: 0.75rem; }
+      .faq-sidebar { margin-bottom: 2.25rem; }
+      .faq-toggle { padding: 1.25rem 0; }
+      .faq-question { font-size: 0.9rem; padding-right: 0.5rem; }
     }
 
     /* ─── BACK TO TOP ────────────────────────── */
@@ -673,13 +708,7 @@
     </div>
     <div class="hero-visual reveal reveal-delay-2">
       <div class="hero-frame">
-        <div class="hero-img-wrap">
-          <img src="assets/adolfo-hero.webp" alt="Retrato profissional de Adolfo Nogueira, advogado OAB/CE 30.698" width="800" height="1066" fetchpriority="high" decoding="async">
-          <div class="hero-caption">
-            <p class="hero-caption-name">Adolfo Nogueira</p>
-            <p class="hero-caption-title">Advogado • OAB/CE 30.698</p>
-          </div>
-        </div>
+        <div class="hero-img-wrap photo-placeholder" aria-hidden="true"></div>
       </div>
     </div>
   </div>
@@ -699,9 +728,7 @@
     <div class="sobre-grid">
       <div class="sobre-visual reveal">
         <div class="sobre-accent"></div>
-        <div class="sobre-img-wrap">
-          <img src="assets/escritorio-adolfo.webp" alt="Adolfo Nogueira em atendimento no escritório em Quixeramobim" width="900" height="900" loading="lazy" decoding="async">
-        </div>
+        <div class="sobre-img-wrap photo-placeholder" aria-hidden="true"></div>
         <div class="sobre-accent-2"></div>
         <div class="sobre-stats">
           <div class="stat-card">
@@ -910,16 +937,7 @@
   <div class="container">
     <div class="perfil-grid">
       <div class="perfil-visual reveal">
-        <div class="perfil-img-wrap">
-          <img src="assets/adolfo-perfil.webp" alt="Adolfo Nogueira em traje profissional" width="800" height="800" loading="lazy" decoding="async">
-          <div class="perfil-img-label">
-            <div class="oab-badge">OAB<br>CE</div>
-            <div>
-              <div class="oab-number">30.698</div>
-              <div class="oab-info">Advogado inscrito</div>
-            </div>
-          </div>
-        </div>
+        <div class="perfil-img-wrap photo-placeholder" aria-hidden="true"></div>
       </div>
       <div class="reveal reveal-delay-1">
         <div class="section-label" style="color:var(--gold);">O Profissional</div>

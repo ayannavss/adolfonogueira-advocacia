@@ -2,10 +2,12 @@
 
 Landing page estática preparada para apresentação comercial e publicação na Vercel.
 
+Esta versão de prospecção mantém as molduras de fotografia vazias para que as imagens definitivas sejam inseridas somente após a aprovação do profissional.
+
 ## Estrutura
 
 - `index.html`: página completa.
-- `assets/`: fotos, monograma e ícones otimizados.
+- `assets/`: monograma e ícones otimizados.
 - `og-image.webp`: imagem de compartilhamento 1200 × 630 px.
 - `robots.txt` e `sitemap.xml`: indexação.
 - `site.webmanifest` e favicons: identidade no navegador e celular.
