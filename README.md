@@ -1,48 +1,32 @@
-# Adolfo Nogueira Advocacia
+# AN Advocacia — Projeto Conceitual
 
-Landing page estática preparada para apresentação comercial e publicação na Vercel.
+Case conceitual de website premium para advocacia, desenvolvido por Ayanna Virginia para apresentação em portfólio.
 
-Esta versão de prospecção mantém as molduras de fotografia vazias para que as imagens definitivas sejam inseridas somente após a aprovação do profissional.
+O nome **AN Advocacia**, o conteúdo institucional e todos os dados exibidos são demonstrativos. Esta página não representa um escritório real e não oferece atendimento jurídico.
 
-## Estrutura
+## Destaques do projeto
 
-- `index.html`: página completa.
+- Direção visual sóbria e premium.
+- Layout responsivo para desktop e celular.
+- Arquitetura de conteúdo para as áreas criminal, cível e trabalhista.
+- Jornada de conversão com demonstração de contato e formulário.
+- FAQ, acessibilidade, favicons, Open Graph e dados estruturados.
+- Molduras preparadas para receber fotografias profissionais em uma implementação real.
+- Comunicação compatível com a ética da publicidade jurídica, sem promessas de resultado.
+
+## Arquivos principais
+
+- `index.html`: página completa e interações.
 - `assets/`: monograma e ícones otimizados.
-- `og-image.webp`: imagem de compartilhamento 1200 × 630 px.
-- `robots.txt` e `sitemap.xml`: indexação.
-- `site.webmanifest` e favicons: identidade no navegador e celular.
-- `vercel.json`: headers de segurança e cache dos arquivos estáticos.
+- `og-image.webp`: imagem de compartilhamento em 1200 × 630 px.
+- `robots.txt`: bloqueio de indexação do conceito isolado.
+- `site.webmanifest`: identidade do projeto no navegador.
+- `vercel.json`: headers de segurança e cache.
 
-## Publicar pelo GitHub e Vercel
+## Publicação
 
-1. Crie um repositório no GitHub chamado `adolfonogueira-advocacia`.
-2. Envie **o conteúdo desta pasta para a raiz** do repositório. O arquivo `index.html` não pode ficar dentro de outra subpasta.
-3. Na Vercel, selecione **Add New > Project** e importe o repositório.
-4. Em **Framework Preset**, selecione `Other`.
-5. Não preencha Build Command. Mantenha a raiz do projeto como `./` e publique.
-6. Use `adolfo-nogueira-advocacia` como nome do projeto para obter, se disponível, a URL esperada:
-   `https://adolfo-nogueira-advocacia.vercel.app/`
+O repositório está conectado à Vercel. Cada atualização enviada à branch principal gera um novo deploy automaticamente.
 
-## Conferência após o primeiro deploy
+## Observação
 
-Se a Vercel gerar uma URL diferente, substitua a URL esperada nestes arquivos antes do deploy final:
-
-- `index.html`: canonical, Open Graph, Twitter e JSON-LD.
-- `robots.txt`: endereço do sitemap.
-- `sitemap.xml`: URL principal.
-
-Depois, confirme:
-
-- Página inicial e todas as imagens carregando.
-- Botões do WhatsApp abrindo o número correto.
-- Layout no computador e no celular.
-- `robots.txt`, `sitemap.xml` e `og-image.webp` acessíveis pela URL pública.
-
-## Dados utilizados
-
-- WhatsApp: (88) 9 9916-0853.
-- OAB/CE 30.698.
-- Sede: Rua Presidente Vargas, 86, José Aurélio Câmara, Quixeramobim–CE.
-- E-mail: adolfonogueiraadv@hotmail.com.
-
-Este site apresenta informações institucionais e não contém promessa de resultado jurídico.
+Para transformar este conceito em um site comercial, devem ser inseridos apenas dados profissionais verificados, canais de contato autorizados e fotografias licenciadas pelo contratante.

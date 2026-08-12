@@ -1,6 +1,6 @@
 # Relatório de otimização
 
-Projeto estático de Adolfo Nogueira Advocacia, revisado em 10/08/2026.
+Projeto conceitual AN Advocacia, criado para portfólio e revisado em 12/08/2026.
 
 > Atualização de prospecção: as fotografias foram removidas do layout e do pacote em 11/08/2026. As molduras foram preservadas para receber as imagens aprovadas pelo profissional.
 
