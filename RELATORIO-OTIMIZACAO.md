@@ -59,6 +59,6 @@ Os dados acima registram a otimização realizada antes da retirada das fotos. O
 
 ## Observações de publicação
 
-A prévia está configurada para `https://adolfo-nogueira-advocacia.vercel.app/`. Se a Vercel gerar uma URL diferente ou o cliente contratar um domínio próprio, substitua-a no canonical, Open Graph, JSON-LD, robots.txt e sitemap.xml antes da publicação definitiva.
+A prévia está configurada para `https://adolfonogueira-advocacia.vercel.app/`. Se a Vercel gerar uma URL diferente ou o cliente contratar um domínio próprio, substitua-a no canonical, Open Graph, JSON-LD, robots.txt e sitemap.xml antes da publicação definitiva.
 
 A nota real do PageSpeed depende também da hospedagem: HTTPS, compressão Brotli/Gzip, HTTP/2 ou HTTP/3, cache e tempo de resposta do servidor. Após publicar, execute Lighthouse/PageSpeed em modo anônimo e sem extensões. O pacote foi preparado para eliminar os principais gargalos no front-end, mas nenhuma nota deve ser prometida antes do teste na URL de produção.
